@@ -63,8 +63,14 @@ function _HTOP_TOGGLE()
 	htop:toggle()
 end
 
-local python = Terminal:new({ cmd = "python", hidden = true })
+local python = Terminal:new({ cmd = "python3", hidden = true })
 
 function _PYTHON_TOGGLE()
 	python:toggle()
+end
+
+local neomutt = Terminal:new({ cmd = "neomutt", hidden = true })
+
+function _NEOMUTT_TOGGLE()
+	neomutt:toggle()
 end

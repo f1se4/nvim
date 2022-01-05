@@ -7,7 +7,7 @@ local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
+vim.g.mapleader = ","
 vim.g.maplocalleader = " "
 
 -- Modes
@@ -66,6 +66,12 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+
+-- DAP 
+keymap("n", "<leader>do", ':lua require("dapui").toggle()<CR>', opts)
+keymap("n", "<leader>ds", ':lua require("dapui").setup()<CR>', opts)
+keymap("n", "<leader>db", ':lua require("dap").toggle_breakpoint()<CR>', opts)
+keymap("n", "<leader>dr", ':lua require("dap").continue()<CR>',opts)
 
 -- Custom
 keymap("n", "<esc><esc>", "<cmd>nohlsearch<cr>", opts)

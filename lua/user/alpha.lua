@@ -29,7 +29,7 @@ local function footer()
 	-- local fortune = handle:read("*a")
 	-- handle:close()
 	-- return fortune
-	return "'''⌐(ಠ۾ಠ)¬''' f1se4"
+	return "⌐(ಠ۾ಠ)¬    f1se4"
 end
 
 dashboard.section.footer.val = footer()

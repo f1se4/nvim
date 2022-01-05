@@ -45,8 +45,8 @@ local mode = {
 
 local filetype = {
 	"filetype",
-	icons_enabled = false,
-	icon = nil,
+	icons_enabled = true,
+	icon = "",
 }
 
 local branch = {

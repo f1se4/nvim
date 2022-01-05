@@ -1,19 +1,23 @@
-# Neovim from scratch
+# Neovim f1se4 forked from installed version of [lunarvim](https://github.com/ChristianChiarulli/nvim.git) 
 
-## Try out this config
-
-Make sure to remove or move your current `nvim` directory
+**Debian** Install last version executing this script.sh
 
 ```
-git clone git@github.com:ChristianChiarulli/Neovim-from-scratch.git ~/.config/nvim
+#!/usr/bin/env bash
+
+url=https://github.com/neovim/neovim/releases/download/stable
+
+die() { echo "$*" && exit 1;  }
+
+filename=nvim-linux64.tar.gz
+curl -sSL "${url}/${filename}"| 
+   tar -C "${HOME}/.local" -xz --strip-components=1 -f -
 ```
 
 Run `nvim` and wait for the plugins to be installed 
 
 **NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
 
-
-each video will be associated with a branch so checkout the one you are interested in
 
 ## Get healthy
 
@@ -60,7 +64,6 @@ Next we need to install python support (node is optional)
 ## Fonts
 
 - [A nerd font](https://github.com/ryanoasis/nerd-fonts)
-
 - [codicon](https://github.com/microsoft/vscode-codicons/raw/main/dist/codicon.ttf)
 - [An emoji font](https://github.com/googlefonts/noto-emoji/blob/main/fonts/NotoColorEmoji.ttf)
 After moving fonts to `~/.local/share/fonts/`

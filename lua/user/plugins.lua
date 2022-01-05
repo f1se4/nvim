@@ -172,6 +172,7 @@ return packer.startup(function(use)
   use "rcarriga/nvim-dap-ui"
   use "Pocco81/DAPInstall.nvim"
   use 'mfussenegger/nvim-dap-python'
+  use 'nvim-telescope/telescope-dap.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

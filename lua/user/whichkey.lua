@@ -127,16 +127,18 @@ local mappings = {
   d = {
 	  name = "Debug", -- optional group name
     b = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
-    c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
+    c = { "<jmd>lua require'dap'.continue()<cr>", "Continue" },
     C = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run To Cursor" },
     d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
     g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
     i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
+    l = { "<cmd>Telescope dap list_breakpoints<cr>", "Breakpoints List" },
+    v = { "<cmd>Telescope dap variables<cr>", "DAP Variables List" },
     o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
     u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
     p = { "<cmd>lua require'dap'.pause.toggle()<cr>", "Pause" },
     r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
-    s = { "<cmd>lua require'dap'.continue()<cr>1<cr>", "Start" },
+    s = { "<cmd>lua require'dap'.continue()<cr>", "Start" },
     q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
     u = { "<cmd>lua require'dapui'.toggle()<cr>", "Toggle UI display" },
     
@@ -235,6 +237,7 @@ local mappings = {
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
+    t = { "<cmd>TodoTelescope<cr>", "Notes/Todos/Hacks" },
   },
 
   S = {

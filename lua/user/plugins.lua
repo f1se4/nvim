@@ -93,6 +93,8 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use "rose-pine/neovim"
   use "rebelot/kanagawa.nvim"
+  use "ayu-theme/ayu-vim"
+  use "habamax/vim-habanight"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

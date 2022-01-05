@@ -75,6 +75,7 @@ keymap("n", "<F1>", ":e ~/Notes/<cr>", opts)
 keymap("n", "<F3>", ":e .<cr>", opts)
 keymap("n", "<F4>", "<cmd>Telescope resume<cr>", opts)
 keymap("n", "<F5>", "<cmd>Telescope commands<CR>", opts)
+keymap("n", "//", ":noh<CR>", opts)
 keymap(
   "n",
   "<F6>",

@@ -18,7 +18,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("p", "  Find project", ":lua require('telescope').extensions.projects.projects()<CR>"),
 	dashboard.button("r", "ﭯ  Recent files", ":Telescope oldfiles <CR>"),
 	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
-	dashboard.button("s", "ףּ  Find Session", ":Telescope sessions save_current=false <CR>"),
+--[[ 	dashboard.button("s", "ףּ  Find Session", ":Telescope sessions save_current=false <CR>"), ]]
 	dashboard.button("c", "  Config", ":e ~/.config/nvim/init.lua <CR>"),
 	dashboard.button("q", "  Quit", ":qa<CR>"),
 }
@@ -29,7 +29,7 @@ local function footer()
 	-- local fortune = handle:read("*a")
 	-- handle:close()
 	-- return fortune
-	return "⌐(ಠ۾ಠ)¬    f1se4"
+	return "⌐(,,(o,o),,)¬    f1se4"
 end
 
 dashboard.section.footer.val = footer()

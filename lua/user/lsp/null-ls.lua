@@ -15,6 +15,7 @@ null_ls.setup {
   sources = {
     formatting.prettier.with {
       filetypes = {
+        "python",
         "javascript",
         "javascriptreact",
         "typescript",

@@ -73,7 +73,7 @@ return packer.startup(function(use)
   use "MattesGroeger/vim-bookmarks"
   use "lunarvim/vim-solidity"
   use "blackCauldron7/surround.nvim"
---  use "Shatur/neovim-session-manager"
+  -- use "Shatur/neovim-session-manager"
   use "rcarriga/nvim-notify"
   use "tversteeg/registers.nvim"
   use "metakirby5/codi.vim"
@@ -95,6 +95,7 @@ return packer.startup(function(use)
   use "rebelot/kanagawa.nvim"
   use "ayu-theme/ayu-vim"
   use "habamax/vim-habanight"
+  use "arcticicestudio/nord-vim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
